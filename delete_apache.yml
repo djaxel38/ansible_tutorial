@@ -1,0 +1,16 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: update repository
+    yum:
+      name: '*'
+      state: latest
+      update_cache: yes
+
+  - name: delete apache2 package
+    yum:
+     name: httpd
+     state: absent
