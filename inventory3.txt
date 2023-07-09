@@ -1,0 +1,2 @@
+192.168.1.39 apache_package=httpd php_package=php
+192.168.1.40 apache_package=httpd php_package=php
